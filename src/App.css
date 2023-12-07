@@ -1,0 +1,58 @@
+.App {
+  font-size: 20px;
+  background-color: #fdf5e6 !important;
+  font-family: "IM Fell English", serif;
+
+  line-height: 1.6;
+  text-align: justify;
+}
+h1,
+h2,
+h3,
+p {
+  color: #362e28;
+}
+h1,
+h2,
+h3 {
+  margin: 2.5vh auto;
+  width: 50vw;
+}
+::selection {
+  color: #bf3415;
+  background: #e6eefd;
+}
+a:visited {
+  color: #362e28;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e6eefd;
+  font-weight: bold;
+}
+li {
+  line-height: 2;
+  font-size: 1.2em;
+}
+.scene-tooltip {
+  color: black !important;
+}
+/* tr:nth-child(even) {
+  background-color: #f9f9f9;
+} */
