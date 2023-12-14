@@ -37,7 +37,7 @@ export default function PsiConcept() {
 
     ScrollTrigger.create({
       trigger: "#tcs",
-      start: "top center",
+      start: "top top",
       end: "bottom center",
       scrub: true,
       animation: tl,

@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <HelmetProvider>
         <meta charSet="utf-8" />
-        <title>Netsci2023 DHChoi</title>
+        <title>Phd Defense DHChoi</title>
         <meta property="og:type" content="article" />
-        <meta name="description" content="Netsci2023 presentation material" />
+        <meta name="description" content="Phd Defense presentation material" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

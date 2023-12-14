@@ -32,7 +32,7 @@ const Header = () => {
           {
             text: {
               value:
-                "Historical Dynamics of the Kingdom of Chosŏn’s Governance: Patterns of Meritocratic Bureaucracy and Consequences of Systemic Corruption",
+                "A Study on Yangban Bureaucracy of the Kingdom of Chosŏn Dynasty in Historical Dynamics regarding the Career Success",
               delimiter: " ",
             },
             transform: "translateY(-50vh)",
@@ -103,8 +103,8 @@ const Header = () => {
         }}
       >
         <span style={{ backgroundColor: "#ebe4f5" }}>
-          Unraveling the Joseon Dynasty: A Quantitative Approach to Historical
-          Dynamics
+          A Digital History Approach to the History of Joseon: Analyzing Changes
+          in Socio-political Regimes of the Yangban
         </span>
       </h1>
       <h2
