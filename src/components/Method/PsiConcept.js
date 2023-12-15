@@ -37,8 +37,8 @@ export default function PsiConcept() {
 
     ScrollTrigger.create({
       trigger: "#tcs",
-      start: "top top",
-      end: "bottom center",
+      start: "top bottom",
+      end: "top center",
       scrub: true,
       animation: tl,
     });
@@ -47,15 +47,18 @@ export default function PsiConcept() {
 
   return (
     <div ref={ref}>
-      <h3> Concept of Total Success Index( ψ )</h3>
+      <h3 className="font-bold text-2xl">
+        {" "}
+        Concept of Total Success Index( ψ )
+      </h3>
 
-      <ul>
-        <li>
+      <ul className="list-disc ml-5 space-y-2">
+        <li className="text-base">
           Success can be defined as "the real or perceived achievements that
           individuals have accumulated as a result of their work
           experience."(Judge, 1999)
         </li>
-        <li>
+        <li className="text-base">
           we can sum the bureaucrat's grade(r) at a fixed interval to obtain the
           Total Success Index (ψ). Due to r=1 being the highest grade and 18 the
           lowest, we actually sum 19-r so that the larger the ψ the larger the

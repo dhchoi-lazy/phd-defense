@@ -37,7 +37,7 @@ export default function Cartogram() {
 
     gsap.set(".indicators", { display: "flex" });
 
-    var tl = gsap.timeline({
+    let tl = gsap.timeline({
       duration: points.length,
       scrollTrigger: {
         trigger: "#cartogramWrapper",
@@ -48,7 +48,7 @@ export default function Cartogram() {
       },
     });
 
-    var pinner = gsap.timeline({
+    gsap.timeline({
       scrollTrigger: {
         trigger: "#cartogramWrapper",
         start: "top top",
@@ -105,10 +105,10 @@ export default function Cartogram() {
 
   // Use Title and Wrapper like any other React component – except they're styled!
   return (
-    <div ref={cartogramRef}>
+    <div>
       <section className="vh"></section>
 
-      <section className="philosophie">
+      <section className="philosophie" ref={cartogramRef}>
         <div id="cartogramWrapper">
           <div className="indicators">
             <div className="indicator">15th</div>
@@ -118,9 +118,9 @@ export default function Cartogram() {
             <div className="indicator">19th</div>
           </div>
           <div className="point">
-            <article>
+            <article className="w-1/3">
               <h3>Formation of Seoul</h3>
-              <p>
+              <p className="text-lg">
                 During the early days of the Joseon Dynasty, it is difficult for
                 most regions to produce successful candidates. Entering the 15th
                 century, there was a notable increase in the number of Gwageo
@@ -134,7 +134,7 @@ export default function Cartogram() {
             </div>
           </div>
           <div className="point">
-            <article>
+            <article className="w-1/3">
               <h3>16th Century</h3>
               <p>
                 By the 16th century, the influx of Kwagŏ examinees from Seoul
@@ -147,7 +147,7 @@ export default function Cartogram() {
             </div>
           </div>
           <div className="point">
-            <article>
+            <article className="w-1/3">
               <h3>17th Century</h3>
               <p>
                 Seoul, Chungcheong, and Yeongnam continue to be major
@@ -161,7 +161,7 @@ export default function Cartogram() {
           </div>
           <div className="point">
             <article>
-              <h3>18th Century</h3>
+              <h3 className="w-1/3">18th Century</h3>
               <p>
                 In the 18th century, while the general trend stayed the same,
                 the Pyeongan province started seeing a gradual increase in the
@@ -175,7 +175,7 @@ export default function Cartogram() {
           </div>
           <div className="point">
             <article>
-              <h3>19th Century</h3>
+              <h3 className="w-1/3">19th Century</h3>
               <p>
                 As the 19th century came around, the Pyeongan province started
                 standing out. This surge was largely due to the province's

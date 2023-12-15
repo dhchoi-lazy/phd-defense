@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10vw;
-  font-weight: bold;
 }
 
 /* .vh:before {
@@ -68,4 +66,9 @@
   flex-basis: 50%;
   min-width: 50vw;
   height: auto;
+}
+
+.maps {
+  display: flex;
+  flex-direction: row;
 }

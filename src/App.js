@@ -1,10 +1,16 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+import Reveal from "reveal.js";
+import Related from "./components/Related/Related";
+import S1 from "./components/Introduction/introduction1.png";
 import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
 import Layout from "./components/Layout";
 import Header from "./components/Header/Header";
 import Introduction from "./components/Introduction/Introduction";
+import TOC from "./components/TOC/TOC";
 import Data from "./components/Data/Data";
+import Slides from "./components/Slides/Slides";
 import Method from "./components/Method/Method";
 import Psi from "./components/Psi/Psi";
 import Conclusion from "./components/Conclusion/Conclusion";
@@ -40,15 +46,18 @@ function App() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </HelmetProvider>
-      <Layout>
-        <Header />
-        <Introduction />
-        <Data />
-        <Method />
-        <Psi />
-        <Conclusion />
-        <Footer />
-      </Layout>
+      {/* <Layout> */}
+      <Header />
+      <TOC />
+      <Introduction />
+      <Related />
+      <Data />
+      <Method />
+      <Psi />
+      <Conclusion />
+
+      <Footer />
+      {/* </Layout> */}
     </div>
   );
 }

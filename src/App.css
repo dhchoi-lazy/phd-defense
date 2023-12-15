@@ -56,3 +56,8 @@ li {
 /* tr:nth-child(even) {
   background-color: #f9f9f9;
 } */
+
+.reveal {
+  height: 100vh!important;
+  background-color: transparent!important;
+}
