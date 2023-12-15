@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/phd-defense/static/css/main.83bb3e88.css",
-    "main.js": "/phd-defense/static/js/main.6bcda272.js",
+    "main.css": "/phd-defense/static/css/main.f8e3fed7.css",
+    "main.js": "/phd-defense/static/js/main.e67c8c85.js",
     "static/media/ajd2.png": "/phd-defense/static/media/ajd2.fbab8588db57b931bb50.png",
     "static/media/header-none.svg": "/phd-defense/static/media/header-none.ba650de47094b6d566cb4cf0e78a0564.svg",
     "static/media/header-color.svg": "/phd-defense/static/media/header-color.e12814ca9bb9043fbd4952510051e960.svg",
@@ -34,11 +34,11 @@
     "static/media/networkBar.svg": "/phd-defense/static/media/networkBar.db50cf6fbfc46fa158c7d66f96622e76.svg",
     "static/media/tcs.svg": "/phd-defense/static/media/tcs.fc8f9871a6dd775499dd8678b298f6e0.svg",
     "index.html": "/phd-defense/index.html",
-    "main.83bb3e88.css.map": "/phd-defense/static/css/main.83bb3e88.css.map",
-    "main.6bcda272.js.map": "/phd-defense/static/js/main.6bcda272.js.map"
+    "main.f8e3fed7.css.map": "/phd-defense/static/css/main.f8e3fed7.css.map",
+    "main.e67c8c85.js.map": "/phd-defense/static/js/main.e67c8c85.js.map"
   },
   "entrypoints": [
-    "static/css/main.83bb3e88.css",
-    "static/js/main.6bcda272.js"
+    "static/css/main.f8e3fed7.css",
+    "static/js/main.e67c8c85.js"
   ]
 }
