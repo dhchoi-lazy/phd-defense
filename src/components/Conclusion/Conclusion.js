@@ -1,45 +1,39 @@
-import LoremIpsum from "react-lorem-ipsum";
-import { GridNormal, GridContainer } from "../Layout";
+import React, { useEffect, useRef } from "react";
+import Reveal from "reveal.js";
+import S1 from "./conclusion1.png";
+import S2 from "./conclusion2.png";
+import S3 from "./conclusion3.png";
+import S4 from "./conclusion4.png";
+import S5 from "./conclusion5.png";
+
+const images = [S1, S2, S3, S4, S5];
 
 export default function Conclusion() {
+  const deckRef = useRef(null);
+
+  useEffect(() => {
+    if (deckRef.current) {
+      const deck = new Reveal(deckRef.current, {
+        embedded: true,
+        width: window.innerWidth,
+        height: window.innerHeight,
+        keyboardCondition: "focused",
+      });
+      deck.initialize();
+    }
+  }, []);
   return (
     <section id="conclusion">
-      <GridContainer>
-        <GridNormal>
-          <h1>5. Conclusion</h1>
-          <h2>Limitations</h2>
-          <ul>
-            <li>
-              Application of the ψ (Total Success Index) on Discourses in the
-              Annals of the Joseon Dynasty ‘the number of appearances’ was not
-              considered until now.
-            </li>
-            <li>
-              By investigating how a bureaucrat’s discourse strategy influenced
-              TSI in AJD, the conditions that make a successful Joseon Dynasty
-              bureaucrat will be revealed.
-            </li>
-          </ul>
-          <h2>Contribution</h2>
-          <ul>
-            <li>
-              Constructed a comprehensive dataset that can enhance understanding
-              of dynamics in political society.
-            </li>
-            <li>
-              Proposed TSI (Total Success Index), a metric that measures career
-              success.
-            </li>
-            <li>
-              Quantitatively verified the historical facts that were previously
-              known.
-            </li>
-            <li>
-              Found some novel historical facts that were not known until now.
-            </li>
-          </ul>
-        </GridNormal>
-      </GridContainer>
+      <h1 className="text-4xl">6. Concluding Remarks</h1>
+      <div className="reveal deck" ref={deckRef}>
+        <div className="slides">
+          {images.map((image, index) => (
+            <section key={index}>
+              <img src={image} alt={`Slide ${index + 1}`} />
+            </section>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

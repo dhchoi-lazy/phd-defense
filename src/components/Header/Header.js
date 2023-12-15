@@ -17,7 +17,7 @@ const Header = () => {
     scrollTrigger: {
       trigger: introRef.current,
       start: "0px end",
-      end: "+=60%",
+      end: "+=40%",
       scrub: true,
       markers: false,
       id: "intro",
@@ -35,12 +35,12 @@ const Header = () => {
                 "A Study on Yangban Bureaucracy of the Kingdom of Chosŏn Dynasty in Historical Dynamics regarding the Career Success",
               delimiter: " ",
             },
-            transform: "translateY(-50vh)",
+            transform: "translateY(-40vh)",
             ease: "none",
           },
           "title"
         )
-        .from("#header-background", { opacity: 0 }, "title-=30%")
+        .from("#header-background", { opacity: 0 }, "title-=50%")
         .from(".mountain", { fill: "transparent" }, "mountain")
         .from(".sky", { fill: "transparent" }, "img3")
         .from(".leaves", { fill: "transparent" }, "img3")
@@ -68,7 +68,7 @@ const Header = () => {
           "sea"
         )
         .from("#affiliation, #author", {
-          // transform: "translateY(-50vh)",
+          transform: "translateY(-20vh)",
           autoAlpha: 0,
         });
     }, headerRef.current);
@@ -88,17 +88,18 @@ const Header = () => {
           width: "50vw",
           margin: "0 auto",
           position: "relative",
-          top: "60vh",
+          top: "50vh",
         }}
       />
+
       <h1
         id="title"
         style={{
           width: "50vw",
           margin: "0 auto",
           position: "relative",
-          top: "25vh",
-          fontSize: "2em",
+          top: "10vh",
+          fontSize: "1.8em",
           // transform: `translateY(${100}%)`,
         }}
       >
@@ -113,7 +114,7 @@ const Header = () => {
           margin: "0 auto",
           autoAlpha: 1,
           position: "relative",
-          top: "35vh",
+          top: "20vh",
         }}
       >
         <span
@@ -130,7 +131,7 @@ const Header = () => {
           margin: "0 auto",
           autoAlpha: 1,
           position: "relative",
-          top: "35vh",
+          top: "20vh",
         }}
       >
         <span
@@ -138,7 +139,7 @@ const Header = () => {
             backgroundColor: "#ebe4f5",
           }}
         >
-          <i>Graduate School of Culture Technology, KAIST</i>
+          <i>Phd Dissertation, 2023</i>
         </span>
       </h3>
     </div>
